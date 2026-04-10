@@ -73,7 +73,7 @@ const projects = [
   },
    {
     name: "Martin Burn Business Park",
-    location: "Salt Lake, Sector V",
+    location: "Salt Lake,Sector V",
     price: "₹ 7 L - 18 L",
     type: "office",
     status: "under",
@@ -82,7 +82,7 @@ const projects = [
   },
   {
     name: "Merlin The Summit",
-    location: " Sector V",
+    location: "Sector V",
     price: "₹ 1.12 Cr - 2.10 Cr",
     type: "office",
     status: "under",
@@ -100,7 +100,7 @@ const projects = [
   },
   {
     name: "MG Squarentre",
-    location: " Central ",
+    location: "Central",
     price: "₹ 28 L - 4 Cr",
     type: "office",
     status: "under",
@@ -118,7 +118,7 @@ const projects = [
   },
   {
     name: "PARK NX",
-    location: " Park Street, Central",
+    location: " Park Street,Central",
     price: "₹ 1.20 Cr Onwards",
     type: "office",
     status: "under",
@@ -127,7 +127,7 @@ const projects = [
   },
   {
     name: "Primarc Chambers",
-    location: " EM Bypass",
+    location: "EM Bypass",
     price: "₹ 57 L Onwards",
     type: "office",
     status: "under",
@@ -145,7 +145,7 @@ const projects = [
   },
    {
     name: "PS Dominion",
-    location: "Bhawanipur, Sarat Bose Road, Central",
+    location: "Bhawanipur, Sarat Bose Road,Central",
     price: "₹ 1.25 Cr Onwards",
     type: "office",
     status: "under",
@@ -172,7 +172,7 @@ const projects = [
   },
   {
     name: "PS Srijan Corporate Park",
-    location: "Salt Lake, Sector V",
+    location: "Salt Lake,Sector V",
     price: "₹4 L - 10 L",
     type: "office",
     status: "under",
@@ -181,7 +181,7 @@ const projects = [
   },
   {
     name: "PS Srijan Tech Park",
-    location: "Salt Lake, Sector V",
+    location: "Salt Lake,Sector V",
     price: "₹ 8 L - 4.69 Cr",
     type: "office",
     status: "under",
@@ -208,7 +208,7 @@ const projects = [
   },
    {
     name: "Siddha Esplanade",
-    location: "Esplanade, Central",
+    location: "Esplanade,Central",
     price: "₹ 84 L - 1.88 Cr",
     type: "office",
     status: "under",
@@ -262,7 +262,7 @@ const projects = [
   },
   {
     name: "Srijan Intellia Business Park",
-    location: "Park Circus, Central",
+    location: "Park Circus,Central",
     price: "₹ 2.20 Cr Onwards",
     type: "office",
     status: "under",
@@ -271,7 +271,7 @@ const projects = [
   },
    {
     name: "Srijan Logos",
-    location: "AJC Bose Road, Central",
+    location: "AJC Bose Road,Central",
     price: "₹ 1.30 Cr - 5.96 Cr",
     type: "office",
     status: "under",
@@ -318,7 +318,7 @@ const projects = [
   },
    {
     name: "West Walk",
-    location: " Esplanade, Central",
+    location: " Esplanade,Central",
     price: "₹ 70 L Onwards",
     type: "office",
     status: "under",
