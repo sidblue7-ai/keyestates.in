@@ -1,0 +1,521 @@
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #111;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #000;
+    color: white;
+}
+
+.header a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://via.placeholder.com/1600x600');
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+/* FILTER */
+.filter-bar {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.filter-container select,
+.search-btn {
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.search-btn {
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* PROJECT GRID */
+.projects-section {
+    padding: 60px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+}
+
+.image-wrap {
+    overflow: hidden;
+}
+
+.image-wrap img {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h3 {
+    margin-bottom: 8px;
+}
+
+.content span {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #0a8f3c;
+}
+
+.content button {
+    padding: 10px 14px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* CTA */
+.cta {
+    padding: 80px 20px;
+    background: #000;
+    text-align: center;
+}
+
+.cta-box {
+    max-width: 600px;
+    margin: auto;
+    color: white;
+}
+
+.cta button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: white;
+    border: none;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #111;
+    color: #aaa;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .projects-section {
+        padding: 40px 20px;
+    }
+}
+.location-intro {
+    padding: 60px 0;
+    background: #f3f3f3;
+}
+
+.intro-wrap {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.intro-image {
+    flex: 1;
+}
+
+.intro-image img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.intro-content {
+    flex: 2;
+}
+
+.intro-content h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.intro-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+    .intro-wrap {
+        flex-direction: column;
+    }
+}
+/* LOCALITIES */
+.localities {
+    padding: 60px 0;
+    background: #f5f5f5;
+}
+
+.localities h2 {
+    margin-bottom: 10px;
+}
+
+.localities .sub {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.locality-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.locality-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.locality-card img {
+    width: 70px;
+    border-radius: 6px;
+}
+
+/* RESIDENTIAL */
+.residential {
+    padding: 60px 0;
+}
+
+.h-img {
+    position: relative;
+}
+
+.h-img img {
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: black;
+    color: gold;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.h-content {
+    padding: 15px;
+}
+
+.h-content h3 {
+    margin-bottom: 5px;
+}
+
+.h-content h4 {
+    margin: 10px 0;
+    color: #0a8f3c;
+}
+
+.status {
+    color: green;
+    font-weight: bold;
+}
+
+.image-card {
+    position: relative;
+    min-width: 320px;
+    height: 220px;
+    border-radius: 14px;
+    overflow: hidden;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.image-card:hover img {
+    transform: scale(1.1);
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+}
+
+.overlay h3 {
+    margin-bottom: 5px;
+}
+
+.overlay p {
+    font-weight: bold;
+}
+
+.overlay span {
+    font-size: 13px;
+    color: #ddd;
+}
+.h-card {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.h-card:hover {
+    transform: translateY(-6px);
+    transition: 0.3s;
+}
+/* ===== FINAL PROJECT GRID FIX ===== */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+.project-card {
+    display: flex;
+    height: 180px; /* FIX HEIGHT */
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #111;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+}
+
+/* IMAGE */
+.project-img {
+    width: 45%;
+    height: 100%;
+    position: relative;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* BADGES */
+.project-img .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: black;
+    color: gold;
+    padding: 4px 10px;
+    font-size: 11px;
+    border-radius: 4px;
+}
+
+.rera {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: #1e88e5;
+    color: white;
+    padding: 4px 10px;
+    font-size: 11px;
+    border-radius: 4px;
+}
+
+/* CONTENT */
+.project-content {
+    width: 55%;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-content h3 {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.builder {
+    font-size: 12px;
+    color: #666;
+}
+
+.location {
+    font-size: 12px;
+    margin: 4px 0;
+}
+
+.project-content h4 {
+    font-size: 15px;
+    margin: 6px 0;
+    color: #0a8f3c;
+}
+
+/* STATUS */
+.status {
+    font-size: 13px;
+    color: green;
+    font-weight: bold;
+}
+
+/* PROGRESS */
+.progress {
+    height: 5px;
+    background: #eee;
+    border-radius: 10px;
+    margin-top: 6px;
+}
+
+.progress-bar {
+    width: 70%;
+    height: 100%;
+    background: #8bc34a;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .project-card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .project-img,
+    .project-content {
+        width: 100%;
+    }
+
+    .project-img {
+        height: 200px;
+    }
+}
+@media(max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header nav {
+        display: flex;
+        gap: 15px;
+    }
+}
+@media(max-width: 768px) {
+    .intro-wrap {
+        flex-direction: column;
+    }
+
+    .intro-content h2 {
+        font-size: 24px;
+    }
+}
+@media(max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+}
+.logo img {
+    height: 40px;   /* PERFECT SIZE */
+    width: auto;
+    object-fit: contain;
+}
