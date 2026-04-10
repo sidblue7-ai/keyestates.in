@@ -180,11 +180,13 @@ h2 { margin-bottom: 5px; }
 }
 
 /* SEARCH */
-.search-box {
+/*.search-box {
   position: relative;
   display: flex;
-  width: 40%;
-}
+  flex: 1;             
+  margin: 0 40px;
+  max-width: 650px;     
+}*/
 
 .search-box input {
   width: 100%;
@@ -274,10 +276,66 @@ h2 { margin-bottom: 5px; }
 }
 .phone {
   font-weight: 600;
-  color: #fff;
+  color: #ffd700;     
   font-size: 14px;
+  white-space: nowrap;
 }
-
 .logo img {
   height: 36px;
+}
+/* ===== MOBILE RESPONSIVE FIX ONLY ===== */
+
+/* 1. Viewport safe scaling */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* 2. Container adjustment (no design change) */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px !important;
+  }
+}
+
+/* 3. Make everything flexible without breaking layout */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 4. Prevent elements from overflowing */
+* {
+  box-sizing: border-box;
+}
+
+/* 5. Fix grids WITHOUT changing layout */
+@media (max-width: 768px) {
+  .zones-grid,
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* 6. Small phones */
+@media (max-width: 480px) {
+  .zones-grid,
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* 7. Header adjustment (no redesign) */
+@media (max-width: 768px) {
+  .top-header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+/* 8. Text scaling (minimal) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
 }
