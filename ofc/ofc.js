@@ -419,14 +419,13 @@ function toggleMenu() {
 display(projects);
 function updateZoneCounts() {
   document.querySelectorAll(".count").forEach(el => {
-    let zone = el.dataset.zone.toLowerCase();
+    let zone = el.dataset.zone.trim().toLowerCase();
 
     let total = projects.filter(p =>
-      p.location.toLowerCase().includes(zone)
+      p.location.trim().toLowerCase().includes(zone)
     ).length;
 
     el.innerText = total + " Projects";
   });
 }
-
 updateZoneCounts();
