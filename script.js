@@ -96,9 +96,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const zones = [
  {
   name: "New Town",
-  projects: 38,
+  projects: 51,
   img: "https://www.propvestors.in/wp-content/uploads/2021/05/biswa-bangla.webp",
-  link: "https://www.keyestates.in/key%20estates%20residentail/key-new-town/newtown.html"
+  link: "https://www.keyestates.in/new-town/newtown.html"
 },
   {
     name: "EM Bypass",
