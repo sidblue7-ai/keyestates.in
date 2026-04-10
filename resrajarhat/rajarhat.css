@@ -251,3 +251,56 @@ font-size:20px;
   font-size: 16px;
   color: #555;
 }
+.localities-section {
+  padding: 60px 20px;
+  background: #f5f7fa;
+}
+
+.localities-section h2 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.localities-section .sub {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.localities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.locality-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.locality-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.locality-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.locality-card h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.locality-card span {
+  font-size: 13px;
+  color: #666;
+}
