@@ -162,9 +162,9 @@ const zones = [
   },
   {
     name: "Rajarhat",
-    projects: 23,
+    projects: 27,
     img: "https://www.propvestors.in/wp-content/uploads/2021/05/rajarhat-150x150.webp",
-    link: "https://www.keyestates.in/key%20estates%20residentail/rajarhat/rajarhat.html"
+    link: "https://www.keyestates.in/resrajarhat/rajarhat.html"
   },
   {
     name: "Joka",
