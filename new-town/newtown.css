@@ -232,7 +232,7 @@ footer {
 }
 
 .locality-cards {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
@@ -246,6 +246,11 @@ footer {
     align-items: center;
     flex: 1;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+
+    text-decoration: none;   /* IMPORTANT */
+    color: inherit;          /* IMPORTANT */
+    cursor: pointer;         /* OPTIONAL (better UX) */
+    transition: all 0.3s ease;
 }
 
 .locality-card img {
