@@ -12,21 +12,21 @@ document.addEventListener("DOMContentLoaded", () => {
     type: "5 bhk apartment",
     price: "₹ 4.8 Cr+",
     location: "action area i",   // ✅ ADD THIS LINE
-    image: "https://via.placeholder.com/400x250"
+    image: "https://maps.googleapis.com/maps/api/staticmap?center=22.5786708,88.4694651&zoom=14&size=300x300&key=AIzaSyB31jJO4uZEW69rIQrwkBFwhtaweLxiYBE&map_id=d2255034602b7705"
   },
   {
     name: "Purti Veda",
     type: "2 bhk apartment",
     price: "₹ 90 L+",
     location: "action area i",   // ✅ ADD THIS LINE
-    image: "https://via.placeholder.com/400x250"
+    image: "https://maps.googleapis.com/maps/api/staticmap?center=22.601180946133383,88.47191584432105&zoom=14&size=300x300&key=AIzaSyB31jJO4uZEW69rIQrwkBFwhtaweLxiYBE&map_id=d2255034602b7705"
   },
   {
     name: "PS Amistad",
     type: "3 bhk apartment",
     price: "₹ 80 L+",
     location: "action area ii",  // ✅ ADD THIS LINE
-    image: "https://via.placeholder.com/400x250"
+    image: "https://maps.googleapis.com/maps/api/staticmap?center=22.568319957058794,88.51058080012727&zoom=14&size=300x300&key=AIzaSyB31jJO4uZEW69rIQrwkBFwhtaweLxiYBE&map_id=d2255034602b7705"
   }
 ];
   
