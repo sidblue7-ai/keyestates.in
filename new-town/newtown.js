@@ -7,25 +7,28 @@ document.addEventListener("DOMContentLoaded", () => {
     // PROJECT DATA
     // ==========================
     const allProjects = [
-      {
-        name: "PS One 10",
-        type: "5 bhk apartment",
-        price: "₹ 4.8 Cr+",
-        image: "https://via.placeholder.com/400x250"
-      },
-      {
-        name: "Purti Veda",
-        type: "2 bhk apartment",
-        price: "₹ 90 L+",
-        image: "https://via.placeholder.com/400x250"
-      },
-      {
-        name: "PS Amistad",
-        type: "3 bhk apartment",
-        price: "₹ 80 L+",
-        image: "https://via.placeholder.com/400x250"
-      }
-    ];
+  {
+    name: "PS One 10",
+    type: "5 bhk apartment",
+    price: "₹ 4.8 Cr+",
+    location: "action area i",   // ✅ ADD THIS LINE
+    image: "https://via.placeholder.com/400x250"
+  },
+  {
+    name: "Purti Veda",
+    type: "2 bhk apartment",
+    price: "₹ 90 L+",
+    location: "action area i",   // ✅ ADD THIS LINE
+    image: "https://via.placeholder.com/400x250"
+  },
+  {
+    name: "PS Amistad",
+    type: "3 bhk apartment",
+    price: "₹ 80 L+",
+    location: "action area ii",  // ✅ ADD THIS LINE
+    image: "https://via.placeholder.com/400x250"
+  }
+];
   
     let filteredProjects = [...allProjects];
     let visibleCount = 6;
@@ -110,8 +113,17 @@ document.addEventListener("DOMContentLoaded", () => {
   
     searchBtn.addEventListener("click", applyFilters);
   
-    // INITIAL LOAD
-    renderProjects();
-  
-  });
-  
+   // INITIAL LOAD
+renderProjects();
+
+// 👉 ADD BELOW THIS
+const params = new URLSearchParams(window.location.search);
+const location = params.get("location");
+
+if (location) {
+  filteredProjects = filteredProjects.filter(p =>
+    p.location === location.replaceAll("-", " ")
+  );
+
+  renderProjects();
+}
